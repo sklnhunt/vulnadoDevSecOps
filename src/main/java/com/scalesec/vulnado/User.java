@@ -11,6 +11,7 @@ import javax.crypto.SecretKey;
 
 public class User {
   public String id, username, hashedPassword;
+  public String passwordSecret = "Hi@NULLHYD12";
 
   public User(String id, String username, String hashedPassword) {
     this.id = id;
@@ -45,6 +46,7 @@ public class User {
       System.out.println("Opened database successfully");
 
       String query = "select * from users where username = '" + un + "' limit 1";
+      // String query = "select * from users where username = '" + un + "' limit 10";
       System.out.println(query);
       ResultSet rs = stmt.executeQuery(query);
       if (rs.next()) {
