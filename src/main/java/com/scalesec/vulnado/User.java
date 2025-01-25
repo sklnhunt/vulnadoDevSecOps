@@ -12,6 +12,7 @@ import javax.crypto.SecretKey;
 public class User {
   public String id, username, hashedPassword;
   public String passwordHunt="Hi@Test1234";
+  public String pass="Hunter@343";
 
   public User(String id, String username, String hashedPassword) {
     this.id = id;
