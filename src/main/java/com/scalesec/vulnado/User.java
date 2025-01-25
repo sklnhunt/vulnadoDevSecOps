@@ -12,6 +12,7 @@ import javax.crypto.SecretKey;
 public class User {
   public String id, username, hashedPassword;
   public String passwordSecret = "Hi@NULLHYD12";
+  public String hardcodedData = "Entry@12344";
 
   public User(String id, String username, String hashedPassword) {
     this.id = id;
